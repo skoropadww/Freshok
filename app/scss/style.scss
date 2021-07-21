@@ -4,6 +4,59 @@
 @import "global";
 @import "slick";
 
+.header-top {
+  background-color: $default-dark;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+  &__info {
+    display: flex;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-right: 45px;
+    }
+  }
+  &__link {
+    padding-left: 45px;
+    color: #fff;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      @extend %bg-con; 
+      left: 0;
+      top: -2px;   
+    }
+    &--address::before {
+      background-image: url(../images/icon-address.svg);
+      height: 22px;
+      width: 32px;
+    }
+    &--tel::before {
+      background-image: url(../images/icon-tel.svg);
+      height: 22px;
+      width: 22px;
+    }
+  }
+
+
+  .menu-list {
+    display: flex;
+    &__item {
+      &:not(:last-child) {
+        margin-right: 24px;
+      }
+    }
+    &__link {
+      color: #fff;
+    }
+  }
+}
 
 
 
