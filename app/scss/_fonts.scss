@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'signikasemibold', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  src: local('signikasemibold')
+       url('../fonts/signikasemibold.woff2') format('woff2'),
+       url('../fonts/signikasemibold.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'signikabold', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  src: local('signikabold')
+       url('../fonts/signikabold.woff2') format('woff2'),
+       url('../fonts/signikabold.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'latoregular', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  src: local('latoregular')
+       url('../fonts/latoregular.woff2') format('woff2'),
+       url('../fonts/latoregular.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'latomedium', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  src: local('latomedium')
+       url('../fonts/latomedium.woff2') format('woff2'),
+       url('../fonts/latomedium.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'latosemibold', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  src: local('latosemibold')
+       url('../fonts/latosemibold.woff2') format('woff2'),
+       url('../fonts/latosemibold.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'latobold', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  src: local('latobold')
+       url('../fonts/latobold.woff2') format('woff2'),
+       url('../fonts/latobold.woff') format('woff');
+  font-display: swap;
+}
