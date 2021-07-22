@@ -8,6 +8,11 @@ $default-dark : #31352B;
   background-size: cover;
 }
 
+%before-after {
+  content: '';
+  position: absolute;
+}
+
 %signika-600 {
   font-family: 'signikasemibold', sans-serif;
   font-weight: 600;
