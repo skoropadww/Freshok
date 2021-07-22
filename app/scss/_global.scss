@@ -8,6 +8,11 @@ html{
   box-sizing: inherit;
 }
 
+body {
+  background-color: #fff;
+  @extend %lato-400;
+}
+
 .container {
   max-width: 1320px;
   padding: 0 15px;

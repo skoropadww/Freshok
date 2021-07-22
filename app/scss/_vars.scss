@@ -7,3 +7,33 @@ $default-dark : #31352B;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+%signika-600 {
+  font-family: 'signikasemibold', sans-serif;
+  font-weight: 600;
+}
+
+%signika-700 {
+  font-family: 'signikabold', sans-serif;
+  font-weight: 700;
+}
+
+%lato-400 {
+  font-family: 'latoregular', sans-serif;
+  font-weight: 400;
+}
+
+%lato-500 {
+  font-family: 'latomedium', sans-serif;
+  font-weight: 500;
+}
+
+%lato-600 {
+  font-family: 'latosemibold', sans-serif;
+  font-weight: 600;
+}
+
+%lato-700 {
+  font-family: 'latobold', sans-serif;
+  font-weight: 700;
+}
