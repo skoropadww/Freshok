@@ -48,3 +48,23 @@ $bg-light       : #F5F5F5;
   font-family: 'latobold', sans-serif;
   font-weight: 700;
 }
+
+%link-action {
+  padding-bottom: 2px;
+  border-bottom: 1px solid transparent;
+  transition-property: color, border-color, text-shadow;
+  transition:  0.3s ease-in-out;
+  display: inline-block;
+
+  &:hover {
+    border-color: #fff;
+  }
+  &:focus {
+    color: $accent-red;
+    border-color: $accent-red;
+  }
+  &:active {
+    color: $accent;
+    border-color: $accent;
+  }
+}
