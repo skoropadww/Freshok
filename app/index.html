@@ -48,19 +48,19 @@
           </div>
           <form class="form" action="">
             <input class="form__input" type="text" name="search" placeholder="Найти в магазине ...">
-            <button class="form__sent" type="submit">Поиск</button> 
+            <button class="form__btn" type="submit">Поиск</button>
           </form>
           <ul class="user-nav">
             <li class="user-nav__item">
               <a href="#" class="user-nav__link"></a>
             </li>
             <li class="user-nav__item">
-              <a href="#" class="user-nav__link">
+              <a href="#" class="user-nav__link user-nav__link--heart">
                 <span class="user-nav__numb">12</span>
               </a>
             </li>
             <li class="user-nav__item">
-              <a href="#" class="user-nav__link">
+              <a href="#" class="user-nav__link user-nav__link--cart">
                 <span class="user-nav__numb">12</span>
               </a>
             </li>
@@ -70,10 +70,401 @@
     </div>
   </header>
   <main class="main">
+    <section class="hero">
+      <div class="slider">
+        <div class="slider__item" style="background-image: url(images/slides/slide-1.jpg) ">
+          <div class="container">
+            <div class="slider__inner">
+              <h1 class="slider__title">
+                СВЕЖАЧОК ВАМ в ХАТУ
+                <span class="subtitle">Скидка -50%</span>
+              </h1>
+              <p class="slider__text">
+                Только с 7 по 13 июля скидка на сезонные фрукты и овощи до 50%. Торопитесь!
+              </p>
+            </div>
+            <a class="slider__btn btn" href="#">Купить сейчас</a>
+          </div>
+        </div>
+        <div class="slider__item" style="background-image: url(images/slides/slide-2.jpg) ">
+          <div class="container">
+            <div class="slider__inner">
+              <h1 class="slider__title">
+                НАКРУТИ СЕБЕ ТОМАТОВ
+                <span class="subtitle">АКЦИЯ: 3 кг по цене 1</span>
+              </h1>
+              <p class="slider__text">
+                Только с 12 по 15 июля скидка на домашние помидорчики
+              </p>
+            </div>
+            <a class="slider__btn btn" href="#">Купить сейчас</a>
+          </div>
+        </div>
+        <div class="slider__item" style="background-image: url(images/slides/slide-3.jpg) ">
+          <div class="container">
+            <div class="slider__inner">
+              <h1 class="slider__title">
+                Пусть остальные <br>
+                позеленеют от зависти
+                <span>Распродажа зелени</span>
+              </h1>
+            </div>
+            <a class="slider__btn btn" href="#">Купить сейчас</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero__info">
+        <div class="container">
+          <div class="hero__wrapper">
+            <div class="hero__item hero__item--delivery">
+              <h5 class="hero__subtitle">
+                Бесплатная доставка
+              </h5>
+              <p class="hero__text">
+                Для заказов на сумму от 500 ₽
+              </p>
+            </div>
+            <div class="hero__item hero__item--return">
+              <h5 class="hero__subtitle">
+                Возврат товара
+              </h5>
+              <p class="hero__text">
+                Если товары были испорчены
+              </p>
+            </div>
+            <div class="hero__item hero__item--support">
+              <h5 class="hero__subtitle">
+                Поддержка 24/7
+              </h5>
+              <p class="hero__text">
+                Лучшие операторы
+              </p>
+            </div>
+          </div>
 
+        </div>
+      </div>
+    </section>
+    <section class="goods section">
+      <div class="container">
+        <h2 class="goods__title title">Топовые товары</h2>
+        <ul class="goods__filter">
+          <li class="goods__filter-item">
+            <button class="goods__filter-btn" data-filter="all" type="button">
+              Все товары
+            </button>
+          </li>
+          <li class="goods__filter-item">
+            <button class="goods__filter-btn" data-filter=".fruits" type="button">
+              Фрукты
+            </button>
+          </li>
+          <li class="goods__filter-item">
+            <button class="goods__filter-btn" data-filter=".vegetables" type="button">
+              ОВОЩИ
+            </button>
+          </li>
+          <li class="goods__filter-item">
+            <button class="goods__filter-btn" data-filter=".drinks" type="button">
+              Напитки
+            </button>
+          </li>
+          <li class="goods__filter-item">
+            <button class="goods__filter-btn" data-filter=".grocery" type="button">
+              БАКАЛЕЯ
+            </button>
+          </li>
+        </ul>
+        <ul class="goods__list">
+          <li class="mix goods-item fruits">
+            <div class="goods-item__top">
+              <ul class="goods-item__top-list">
+                <li class="goods-item__top-item goods-item__top-item--new">
+                  новинка
+                </li>
+                <li class="goods-item__top-item goods-item__top-item--discount">
+                  -50%
+                </li>
+              </ul>
+              <button class="goods-item__top-btn " type="button"></button>
+            </div>
+            <div class="goods-item__picture">
+              <img class="goods-item__img" src="images/content/body-7.jpg" alt="Сочный ананас">
+            </div>
+            <p class="goods-item__desc">
+              Ананас,
+              <span>1кг</span>
+            </p>
+            <div class="goods-item__bottom">
+              <p class="goods-item__price">
+                <span class="goods-item__oldprice">
+                  1999 &#8381
+                </span>
+                999 &#8381
+              </p>
+              <a class="goods-item__cart" href="#"></a>
+            </div>
+          </li>
+          <li class="mix goods-item fruits">
+            <div class="goods-item__top">
+              <ul class="goods-item__top-list">
+              </ul>
+              <button class="goods-item__top-btn " type="button"></button>
+            </div>
+            <div class="goods-item__picture">
+              <img class="goods-item__img" src="images/content/body-6.jpg" alt="Кислый лимон">
+            </div>
+            <p class="goods-item__desc">
+              Лимон,
+              <span>1кг</span>
+            </p>
+            <div class="goods-item__bottom">
+              <p class="goods-item__price goods-item__price--one">
+                199 &#8381
+              </p>
+              <a class="goods-item__cart" href="#"></a>
+            </div>
+          </li>
+          <li class="mix goods-item fruits">
+            <div class="goods-item__top">
+              <ul class="goods-item__top-list">
+                <li class="goods-item__top-item goods-item__top-item--hit">
+                  хит
+                </li>
+              </ul>
+              <button class="goods-item__top-btn " type="button"></button>
+            </div>
+            <div class="goods-item__picture">
+              <img class="goods-item__img" src="images/content/body-5.jpg" alt="Питахайя красная">
+            </div>
+            <p class="goods-item__desc">
+              Питахайя красная с белой мякотью,
+              <span>1шт</span>
+            </p>
+            <div class="goods-item__bottom">
+              <p class="goods-item__price goods-item__price--one">
+                1019 &#8381
+              </p>
+              <a class="goods-item__cart" href="#"></a>
+            </div>
+          </li>
+          <li class="mix goods-item vegetables">
+            <div class="goods-item__top">
+              <ul class="goods-item__top-list">
+                <li class="goods-item__top-item goods-item__top-item--new">
+                  новинка
+                </li>
+              </ul>
+              <button class="goods-item__top-btn " type="button"></button>
+            </div>
+            <div class="goods-item__picture">
+              <img class="goods-item__img" src="images/content/body-4.jpg" alt="Перец">
+            </div>
+            <p class="goods-item__desc">
+              Перец оранжевый,
+              <span>1кг</span>
+            </p>
+            <div class="goods-item__bottom">
+              <p class="goods-item__price goods-item__price--one">
+                349 &#8381
+              </p>
+              <a class="goods-item__cart" href="#"></a>
+            </div>
+          </li>
+          <li class="mix goods-item vegetables">
+            <div class="goods-item__top">
+              <ul class="goods-item__top-list">
+                <li class="goods-item__top-item goods-item__top-item--hit">
+                  хит
+                </li>
+              </ul>
+              <button class="goods-item__top-btn " type="button"></button>
+            </div>
+            <div class="goods-item__picture">
+              <img class="goods-item__img" src="images/content/body-3.jpg" alt="Морковь молодая">
+            </div>
+            <p class="goods-item__desc">
+              Морковь молодая с бабушкиной грядки,
+              <span>1кг</span>
+            </p>
+            <div class="goods-item__bottom">
+              <p class="goods-item__price goods-item__price--one">
+                49 &#8381
+              </p>
+              <a class="goods-item__cart" href="#"></a>
+            </div>
+          </li>
+          <li class="mix goods-item drinks">
+            <div class="goods-item__top">
+              <ul class="goods-item__top-list">
+                <li class="goods-item__top-item goods-item__top-item--discount">
+                  -30%
+                </li>
+              </ul>
+              <button class="goods-item__top-btn " type="button"></button>
+            </div>
+            <div class="goods-item__picture">
+              <img class="goods-item__img" src="images/content/body-2.jpg" alt="Sanpellegrino Aranciata">
+            </div>
+            <p class="goods-item__desc">
+              Напиток сокосодержащий Sanpellegrino Aranciata Orange Красный апельсин безалкогольный...
+            </p>
+            <div class="goods-item__bottom">
+              <p class="goods-item__price">
+                <span class="goods-item__oldprice">
+                  299 &#8381
+                </span>
+                199 &#8381
+              </p>
+              <a class="goods-item__cart" href="#"></a>
+            </div>
+          </li>
+          <li class="mix goods-item grocery">
+            <div class="goods-item__top">
+              <ul class="goods-item__top-list">
+                <li class="goods-item__top-item goods-item__top-item--new">
+                  новинка
+                </li>
+              </ul>
+              <button class="goods-item__top-btn " type="button"></button>
+            </div>
+            <div class="goods-item__picture">
+              <img class="goods-item__img" src="images/content/body-1.jpg" alt="Кофе с коноплей">
+            </div>
+            <p class="goods-item__desc">
+              Кофе с коноплей органический Caffé Salomoni 250г
+            </p>
+            <div class="goods-item__bottom">
+              <p class="goods-item__price goods-item__price--one">
+                877 &#8381
+              </p>
+              <a class="goods-item__cart" href="#"></a>
+            </div>
+          </li>
+          <li class="mix goods-item grocery">
+            <div class="goods-item__top">
+              <ul class="goods-item__top-list">
+
+              </ul>
+              <button class="goods-item__top-btn " type="button"></button>
+            </div>
+            <div class="goods-item__picture">
+              <img class="goods-item__img" src="images/content/body.jpg" alt="Кетчуп томатный">
+            </div>
+            <p class="goods-item__desc">
+              Кетчуп томатный детский органический Bio-Zentrale 500мл
+            </p>
+            <div class="goods-item__bottom">
+              <p class="goods-item__price goods-item__price--one">
+                600 &#8381
+              </p>
+              <a class="goods-item__cart" href="#"></a>
+            </div>
+          </li>
+        </ul>
+        <button class="goods__btn" type="button">Показать еще</button>
+      </div>
+    </section>
   </main>
-  <footer class="footer">
 
+
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-top__inner">
+          <a class="logo" href="#">
+            <img class="logo__img" src="images/logo.svg" alt="Фрешок логотип">
+          </a>
+          <div class="footer__info">
+            <form class="footer__form " action="#">
+              <label class="footer__form-label">
+                <p class="footer__form-subtext">
+                  Следите за нашими акциями
+                </p>
+                <input class="footer__form-input form__input" type="email" name="email" placeholder="email@email.com">
+                <button class="footer__form-btn form__btn" type="submit">Подписаться</button>
+              </label>
+            </form>
+            <nav class="footer__nav">
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a class="footer__link" href="#">О нас</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Контакты</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Публичная оферта</a>
+                </li>
+              </ul>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Оплата и доставка</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Вакансии</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Акции</a>
+                </li>
+              </ul>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Отзывы</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Новости</a>
+                </li>
+              </ul>
+            </nav>
+            <address class="footer-adrs">
+              <a class="footer-adrs__link  href=" tel:+7907288365>
+                Горячая линия +7 907 288 365
+              </a>
+              <p class="footer-adrs__text">
+                Санкт-Петербург, ул. Ленина, 1
+              </p>
+              <ul class="social">
+                <li class="social__item">
+                  <a class="social__link social__link--facebook" href="#"></a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--youtube" href="#"></a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--telegram" href="#"></a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--instagram" href="#"></a>
+                </li>
+              </ul>
+            </address>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom__inner">
+          <p class="footer-bottom__copy">
+            © 2021 ФРЕШОК
+          </p>
+          <ul class="footer-bottom__list">
+            <li class="footer-bottom__item">
+              <a class="footer-bottom__link" href="#">
+                <img src="images/visa.svg" alt="Логотип Visa">
+              </a>
+            </li>
+            <li class="footer-bottom__item">
+              <a class="footer-bottom__link" href="#">
+                <img src="images/mc.svg" alt="Логотип MasterCard">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </footer>
   <script src="js/main.min.js"></script>
 </body>
