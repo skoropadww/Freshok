@@ -11,7 +11,8 @@ html{
 
 body {
   background-color: #fff;
-  @extend %lato-400;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.3;
   height: 100%;
@@ -34,7 +35,7 @@ body {
 }
 
 .title {
-  @extend %lato-700;
+  font-weight: 700;
   font-size: 32px;
   letter-spacing: 0.03;
   text-transform: uppercase;
@@ -42,29 +43,127 @@ body {
   margin-bottom: 30px;
 }
 
+.button-icon {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+}
+
+.heart-icon {
+  path {
+    fill: $silver-600; 
+  }
+  // hover не работает (удалил)
+}
+
+.badger {
+  border-radius: 6px;
+  padding: 4px 6px 3px;
+  line-height: 1;
+  letter-spacing: 0.03;
+  width: min-content;
+  text-transform: uppercase;
+
+  &--new {
+    background-color: $accent;
+  }
+
+  &--discount {
+    background-color: $accent-red;
+  }
+
+  &--hit {
+    background-color: $hit;
+  }
+}
 
 .btn {
   padding: 12px 24px;
-  background-color: $accent;
-  border: 1px solid transparent;
-  color: #fff;
+  background-color: $green-700;
+  color: $white;
+  border: 1px solid $green-700;
+  border-radius: 6px;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 0.03;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0);
+  cursor: pointer;
+  display: inline-block;
+  transition-property:color, background-color,box-shadow, border-color;
+  transition: 0.3s ease-in;
+
+  &:hover {
+    background-color: $green-900;
+    border-color: $green-900;
+  }
+
+  &:focus {
+    box-shadow: 0px 0px 0px 4px $green-200;
+  }
+
+  &:active {
+    border-color: $green-700;
+    background-color: $green-700;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+.btn-light {
+  color: $green-700;
+  background-color: $white;
+  padding: 12px 24px;
+  border: 1px solid $green-700;
   border-radius: 6px;
   font-size: 18px;
   letter-spacing: 0.03;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0);
   cursor: pointer;
   display: inline-block;
-  transition-property:border-color,color, background-color,box-shadow;
+  transition-property:color, background-color,box-shadow, border-color;
   transition: 0.3s ease-in;
+
   &:hover {
-    background-color: #fff;
-    color: $accent;
-    border-color:$accent ;
+    background-color: $green-100;
   }
+
   &:focus {
-    box-shadow: 12px 12px 2px 1px rgba(207, 62, 59, 0.3);
+    box-shadow: 0px 0px 0px 4px rgba(99, 166, 14, 0.5);
   }
+
   &:active {
-    box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+    box-shadow: inset 0px 10px 4px rgba(0, 0, 0, 0.1);
+    background-color: $white;
+    color: rgba(99, 166, 14, 0.5);
+  }
+}
+
+.btn-dark {
+  color: $green-700;
+  background-color: $white;
+  padding: 12px 24px;
+  border: 1px solid $green-700;
+  border-radius: 6px;
+  font-size: 18px;
+  letter-spacing: 0.03;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0);
+  cursor: pointer;
+  display: inline-block;
+  transition-property:color, background-color,box-shadow, border-color;
+  transition: 0.3s ease-in;
+
+  &:hover {
+    background-color: $green-100;
+  }
+
+  &:focus {
+    box-shadow: 0px 0px 0px 4px rgba(99, 166, 14, 0.5);
+  }
+
+  &:active {
+    box-shadow: inset 0px 10px 4px rgba(0, 0, 0, 0.1);
+    background-color: $white;
+    color: rgba(99, 166, 14, 0.5);
   }
 }
 

@@ -1,3 +1,17 @@
+$green-700      : #63A60F;
+$green-900      : #4D810C;
+$green-200      : #E0EDCF;
+$green-100      : #EFF6E7;
+$dark-900       : #121212;
+$dark-800       : #31352B;
+$dark-500       : #505050;
+$red-900        : #CF3E3B;
+$orange-900     : #FF7A00; 
+$yellow-900     : #FFB800;
+$silver-600     : #C1C1C1;
+$silver-100     : #F6F6F6;
+$white          : #FFFFFF;
+
 $head           : #121212;
 $text           : #4F4F4F;
 $accent         : #63A60E;
@@ -12,41 +26,6 @@ $like           : #C1C1C1;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-%before-after {
-  content: '';
-  position: absolute;
-}
-
-%signika-600 {
-  font-family: 'signikasemibold', sans-serif;
-  font-weight: 600;
-}
-
-%signika-700 {
-  font-family: 'signikabold', sans-serif;
-  font-weight: 700;
-}
-
-%lato-400 {
-  font-family: 'latoregular', sans-serif;
-  font-weight: 400;
-}
-
-%lato-500 {
-  font-family: 'latomedium', sans-serif;
-  font-weight: 500;
-}
-
-%lato-600 {
-  font-family: 'latosemibold', sans-serif;
-  font-weight: 600;
-}
-
-%lato-700 {
-  font-family: 'latobold', sans-serif;
-  font-weight: 700;
 }
 
 %link-action {
