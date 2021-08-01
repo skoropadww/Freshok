@@ -39,7 +39,7 @@ body {
   font-size: 32px;
   letter-spacing: 0.03;
   text-transform: uppercase;
-  color: $head;
+  color: $dark-900;
   margin-bottom: 30px;
 }
 
@@ -65,15 +65,15 @@ body {
   text-transform: uppercase;
 
   &--new {
-    background-color: $accent;
+    background-color: $green-700 ;
   }
 
   &--discount {
-    background-color: $accent-red;
+    background-color: $red-900;
   }
 
   &--hit {
-    background-color: $hit;
+    background-color: $yellow-900;
   }
 }
 
@@ -139,10 +139,10 @@ body {
 }
 
 .btn-dark {
-  color: $green-700;
-  background-color: $white;
+  color: $white;
+  background-color: $dark-800;
   padding: 12px 24px;
-  border: 1px solid $green-700;
+  border: 1px solid $dark-800;
   border-radius: 6px;
   font-size: 18px;
   letter-spacing: 0.03;
@@ -153,7 +153,8 @@ body {
   transition: 0.3s ease-in;
 
   &:hover {
-    background-color: $green-100;
+    background-color: rgba(49, 53, 43, 0.85);
+    border-color: rgba(49, 53, 43, 0.85);
   }
 
   &:focus {
@@ -162,8 +163,7 @@ body {
 
   &:active {
     box-shadow: inset 0px 10px 4px rgba(0, 0, 0, 0.1);
-    background-color: $white;
-    color: rgba(99, 166, 14, 0.5);
+    color: rgba(255, 255, 255, 0.5);
   }
 }
 

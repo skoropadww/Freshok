@@ -69,12 +69,13 @@
           <form class="form" action="">
             <label class="form__label">
               <input class="form__input" type="text" name="search" placeholder="Найти в магазине ...">
-              <button class="form__btn" type="submit">Поиск</button>
+              <button class="form__btn btn-dark" type="submit">Поиск</button>
             </label>
           </form>
           <ul class="user-nav">
             <li class="user-nav__item">
-              <button href="#" class="user-nav__link user-nav__link--user"></button>
+              <button href="#" class="user-nav__link user-nav__link--user">
+              </button>
             </li>
             <li class="user-nav__item">
               <button href="#" class="user-nav__link user-nav__link--heart">
@@ -469,23 +470,23 @@
 
 
   <footer class="footer">
-    <div class="footer-top">
+    <div class="footer__top">
       <div class="container">
-        <div class="footer-top__inner">
+        <div class="footer__top-inner">
           <a class="logo" href="#">
             <img class="logo__img" src="images/logo.svg" alt="Фрешок логотип">
           </a>
           <div class="footer__info">
-            <form class="footer__form " action="#">
-              <label class="footer__form-label">
-                <p class="footer__form-subtext">
+            <form class="subcribe" action="#">
+              <label class="subcribe__label">
+                <p class="subcribe__subtext">
                   Следите за нашими акциями
                 </p>
-                <input class="footer__form-input form__input" type="email" name="email" placeholder="email@email.com">
-                <button class="footer__form-btn form__btn" type="submit">Подписаться</button>
+                <input class="subcribe__input form__input" type="email" name="email" placeholder="email@email.com" required>
+                <button class="subcribe__btn form__btn btn" type="submit">Подписаться</button>
               </label>
             </form>
-            <nav class="footer__nav">
+            <div class="footer__nav">
               <ul class="footer__list">
                 <li class="footer__item">
                   <a class="footer__link" href="#">О нас</a>
@@ -516,12 +517,12 @@
                   <a class="footer__link" href="#">Новости</a>
                 </li>
               </ul>
-            </nav>
-            <address class="footer-adrs">
-              <a class="footer-adrs__link  href=" tel:+7907288365>
+            </div>
+            <address class="footer__adrs">
+              <a class="footer__adrs-link  href="tel:+7907288365>
                 Горячая линия +7 907 288 365
               </a>
-              <p class="footer-adrs__text">
+              <p class="footer__adrs-text">
                 Санкт-Петербург, ул. Ленина, 1
               </p>
               <ul class="social">
@@ -543,20 +544,20 @@
         </div>
       </div>
     </div>
-    <div class="footer-bottom">
+    <div class="footer__bottom">
       <div class="container">
-        <div class="footer-bottom__inner">
-          <p class="footer-bottom__copy">
+        <div class="footer__bottom-inner">
+          <p class="copy">
             © 2021 ФРЕШОК
           </p>
-          <ul class="footer-bottom__list">
-            <li class="footer-bottom__item">
-              <a class="footer-bottom__link" href="#">
+          <ul class="footer__bottom-list">
+            <li class="footer__bottom-item">
+              <a class="footer__bottom-link" href="#">
                 <img src="images/visa.svg" alt="Логотип Visa">
               </a>
             </li>
-            <li class="footer-bottom__item">
-              <a class="footer-bottom__link" href="#">
+            <li class="footer__bottom-item">
+              <a class="footer__bottom-link" href="#">
                 <img src="images/mc.svg" alt="Логотип MasterCard">
               </a>
             </li>

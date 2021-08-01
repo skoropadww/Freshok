@@ -3,7 +3,7 @@ $green-900      : #4D810C;
 $green-200      : #E0EDCF;
 $green-100      : #EFF6E7;
 $dark-900       : #121212;
-$dark-800       : #31352B;
+$dark-800       : #31352b;
 $dark-500       : #505050;
 $red-900        : #CF3E3B;
 $orange-900     : #FF7A00; 
@@ -12,38 +12,9 @@ $silver-600     : #C1C1C1;
 $silver-100     : #F6F6F6;
 $white          : #FFFFFF;
 
-$head           : #121212;
-$text           : #4F4F4F;
-$accent         : #63A60E;
-$accent-red     : #CF3E3B;
-$default-dark   : #31352B;
-$default-ldark  : #505050;
-$bg-light       : #F5F5F5;
-$hit            : #FF7A00;
-$like           : #C1C1C1;
 
 %bg-con {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-%link-action {
-  padding-bottom: 2px;
-  border-bottom: 1px solid transparent;
-  transition-property: color, border-color, text-shadow;
-  transition:  0.3s ease-in-out;
-  display: inline-block;
-
-  &:hover {
-    border-color: #fff;
-  }
-  &:focus {
-    color: $accent-red;
-    border-color: $accent-red;
-  }
-  &:active {
-    color: $accent;
-    border-color: $accent;
-  }
 }
