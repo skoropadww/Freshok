@@ -168,7 +168,7 @@
       </div>
     </div>
     <section class="goods section">
-      <div class="container">
+      <div class="container" data-ref="container-1">
         <h2 class="goods__title title">Топовые товары</h2>
         <ul class="filter">
           <li class="filter__item">
@@ -197,7 +197,7 @@
             </button>
           </li>
         </ul>
-        <div class="goods__list">
+        <article class="goods__list">
           <div class="mix product fruits">
             <div class="product__top">
               <div class="product__top-list">
@@ -222,11 +222,11 @@
               <span>1кг</span>
             </p>
             <div class="product__bottom">
-              <div class="product__price">
-                <p class="product__oldprice">
+              <div class="price">
+                <p class="price--old">
                   1999 <span>&#8381</span>
                 </p>
-                <p class="product__newprice">
+                <p class="price--new">
                   999 <span>&#8381</span>
                 </p>
               </div>
@@ -255,8 +255,8 @@
               <span>1кг</span>
             </p>
             <div class="product__bottom">
-              <div class="product__price">
-                <p class="product__price--one">
+              <div class="price">
+                <p class="price--one">
                   199 <span>&#8381</span>
                 </p>
               </div>
@@ -288,8 +288,8 @@
               <span>1шт</span>
             </p>
             <div class="product__bottom">
-              <div class="product__price">
-                <p class="product__price--one">
+              <div class="price">
+                <p class="price--one">
                   1019 <span>&#8381</span>
                 </p>
               </div>
@@ -321,8 +321,8 @@
               <span>1кг</span>
             </p>
             <div class="product__bottom">
-              <div class="product__price">
-                <p class="product__price--one">
+              <div class="price">
+                <p class="price--one">
                   349 <span>&#8381</span>
                 </p>
               </div>
@@ -354,8 +354,8 @@
               <span>1кг</span>
             </p>
             <div class="product__bottom">
-              <div class="product__price">
-                <p class="product__price--one">
+              <div class="price">
+                <p class="price--one">
                   49 <span>&#8381</span>
                 </p>
               </div>
@@ -386,11 +386,11 @@
               Напиток сокосодержащий Sanpellegrino Aranciata Orange Красный апельсин безалкогольный...
             </p>
             <div class="product__bottom">
-              <div class="product__price">
-                <p class="product__oldprice">
+              <div class="price">
+                <p class="price--old">
                   299 <span>&#8381</span>
                 </p>
-                <p class="product__newprice">
+                <p class="price--new">
                   199 <span>&#8381</span>
                 </p>
               </div>
@@ -421,8 +421,8 @@
               Кофе с коноплей органический Caffé Salomoni 250г
             </p>
             <div class="product__bottom">
-              <div class="product__price">
-                <p class="product__price--one">
+              <div class="price">
+                <p class="price--one">
                   877 <span>&#8381</span>
                 </p>
               </div>
@@ -450,8 +450,8 @@
               Кетчуп томатный детский органический Bio-Zentrale 500мл
             </p>
             <div class="product__bottom">
-              <div class="product__price">
-                <p class="product__price--one">
+              <div class="price">
+                <p class="price--one">
                   600 <span>&#8381</span>
                 </p>
               </div>
@@ -462,8 +462,416 @@
               </button>
             </div>
           </div>
-        </div>
+        </article>
         <button class="goods__btn btn-light" type="button">Показать еще</button>
+      </div>
+    </section>
+    <div class="banner">
+      <div class="container">
+        <div class="banner__list">
+          <div class="banner__item banner__item--active " style="background-image: url(images/banner/1.jpg);">
+            <p class="banner__subtitle">
+              СВЕЖАЙШИЕ ФРУКТЫ
+            </p>
+            <p class="banner__desc">
+              НАЧНИ ФРУКТОВОЕ ЛЕТО
+              ВСЕГО От 99 ₽
+            </p>
+            <a class="banner__link banner__link--first" href="#">ПЕРЕЙТИ К ПОКУПКАМ</a>
+          </div>
+          <div class="banner__item" style="background-image: url(images/banner/2.jpg);">
+            <p class="banner__subtitle">
+              СЕЗОННАЯ РАСПРОДАЖА
+            </p>
+            <p class="banner__desc">
+              ОВОЩЕПАД
+              ДО -50%
+            </p>
+            <a class="banner__link" href="#">ПЕРЕЙТИ К ПОКУПКАМ</a>
+          </div>
+          <div class="banner__item" style="background-image: url(images/banner/3.jpg);">
+            <p class="banner__subtitle">
+              НЯМ-НЯМ
+            </p>
+            <p class="banner__desc">
+              СВЕЖИЙ
+              ХЛЕБЧИК
+            </p>
+            <a class="banner__link" href="#">ПЕРЕЙТИ К ПОКУПКАМ</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="stock section">
+      <div class="container" data-ref="container-2">
+        <h2 class="stock__title title">Акции</h2>
+        <ul class="filter">
+          <li class="filter__item">
+            <button class="filter__btn" data-filter="all" type="button">
+              Все товары
+            </button>
+          </li>
+          <li class="filter__item">
+            <button class="filter__btn" data-filter=".news" type="button">
+              Новинки
+            </button>
+          </li>
+          <li class="filter__item">
+            <button class="filter__btn" data-filter=".hits" type="button">
+              Хиты
+            </button>
+          </li>
+        </ul>
+        <article class="stock__list">
+          <div class="stock__item mix product news">
+            <div class="stock__item-left">
+              <div class="stock__badger badger badger--new">
+                новинка
+              </div>
+              <img class="stock__item-img" src="images/stock/1.jpg" alt="Сочный ананас">
+            </div>
+            <div class="stock__item-right">
+              <p class="stock__item-desc product__desc">
+                Ананас,
+                <span>1кг</span>
+              </p>
+              <p class="availability availability--available">
+                В НАЛИЧИИ
+              </p>
+              <div class="stock__item-bottom">
+                <div class="stock__price price">
+                  <p class="stock__allprice stock__allprice--new price--new">
+                    999 <span>&#8381</span>
+                  </p>
+                  <p class="stock__allprice price--old">
+                    1999 <span>&#8381</span>
+                  </p>
+                </div>
+                <div class="star" data-rateyo-rating="4">
+                  <div class="star-number">
+                    4.5
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="stock__item mix product news">
+            <div class="stock__item-left">
+              <div class="stock__badger badger badger--new">
+                новинка
+              </div>
+              <img class="stock__item-img" src="images/stock/2.jpg" alt="Кофе с коноплей">
+            </div>
+            <div class="stock__item-right">
+              <p class="stock__item-desc product__desc">
+                Кофе с коноплей органический Caffé Salomoni 250г
+              </p>
+              <p class="availability availability--runningout">
+                ЗАКАНЧИВАЕТСЯ
+              </p>
+              <div class="stock__item-bottom">
+                <div class="stock__price price">
+                  <p class="stock__allprice stock__allprice--new price--new">
+                    777 <span>&#8381</span>
+                  </p>
+                  <p class="stock__allprice price--old">
+                    877 <span>&#8381</span>
+                  </p>
+                </div>
+                <div class="star" data-rateyo-rating="4">
+                  <div class="star-number">
+                    4.9
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="stock__item mix product news">
+            <div class="stock__item-left">
+              <div class="stock__badger badger badger--new">
+                новинка
+              </div>
+              <img class="stock__item-img" src="images/stock/3.jpg" alt="Клубника красная спелая">
+            </div>
+            <div class="stock__item-right">
+              <p class="stock__item-desc product__desc">
+                Клубника
+                <span>1кг</span>
+              </p>
+              <p class="availability availability--unavailable">
+                НЕТ В НАЛИЧИИ
+              </p>
+              <div class="stock__item-bottom">
+                <div class="stock__price price">
+                  <p class="stock__allprice stock__allprice--new price--new">
+                    440 <span>&#8381</span>
+                  </p>
+                  <p class="stock__allprice price--old">
+                    600 <span>&#8381</span>
+                  </p>
+                </div>
+                <div class="star" data-rateyo-rating="4">
+                  <div class="star-number">
+                    5.0
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="stock__item mix product news">
+            <div class="stock__item-left">
+              <div class="stock__badger badger badger--new">
+                новинка
+              </div>
+              <img class="stock__item-img" src="images/stock/4.jpg" alt="Манго">
+            </div>
+            <div class="stock__item-right">
+              <p class="stock__item-desc product__desc">
+                Манго,
+                <span>1 шт</span>
+              </p>
+              <p class="availability availability--available">
+                В НАЛИЧИИ
+              </p>
+              <div class="stock__item-bottom">
+                <div class="stock__price price">
+                  <p class="stock__allprice stock__allprice--new price--new">
+                    660 <span>&#8381</span>
+                  </p>
+                  <p class="stock__allprice price--old">
+                    960 <span>&#8381</span>
+                  </p>
+                </div>
+                <div class="star" data-rateyo-rating="4">
+                  <div class="star-number">
+                    5.0
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="stock__item mix product news">
+            <div class="stock__item-left">
+              <div class="stock__badger badger badger--new">
+                новинка
+              </div>
+              <img class="stock__item-img" src="images/stock/5.jpg" alt="Лосось">
+            </div>
+            <div class="stock__item-right">
+              <p class="stock__item-desc product__desc">
+                Лосось
+                <span>1кг</span>
+              </p>
+              <p class="availability availability--available">
+                В НАЛИЧИИ
+              </p>
+              <div class="stock__item-bottom">
+                <div class="stock__price price">
+                  <p class="stock__allprice stock__allprice--new price--new">
+                    999 <span>&#8381</span>
+                  </p>
+                  <p class="stock__allprice price--old">
+                    1199 <span>&#8381</span>
+                  </p>
+                </div>
+                <div class="star" data-rateyo-rating="4">
+                  <div class="star-number">
+                    4.5
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="stock__item mix product hits">
+            <div class="stock__item-left">
+              <div class="stock__badger badger badger--hit">
+                хит
+              </div>
+              <img class="stock__item-img" src="images/stock/6.jpg" alt="Сок овощной">
+            </div>
+            <div class="stock__item-right">
+              <p class="stock__item-desc product__desc">
+                Сок Granini овощной 100%,
+                <span>0.5л</span>
+              </p>
+              <p class="availability availability--runningout">
+                ЗАКАНЧИВАЕТСЯ
+              </p>
+              <div class="stock__item-bottom">
+                <div class="stock__price price">
+                  <p class="stock__allprice stock__allprice--new price--new">
+                    180 <span>&#8381</span>
+                  </p>
+                  <p class="stock__allprice price--old">
+                    230 <span>&#8381</span>
+                  </p>
+                </div>
+                <div class="star" data-rateyo-rating="4">
+                  <div class="star-number">
+                    4.9
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="stock__item mix product hits">
+            <div class="stock__item-left">
+              <div class="stock__badger badger badger--hit">
+                хит
+              </div>
+              <img class="stock__item-img" src="images/stock/7.jpg" alt="Корзина с фруктами">
+            </div>
+            <div class="stock__item-right">
+              <p class="stock__item-desc product__desc">
+                Фруктовая корзина,
+                <span>1 шт</span>
+              </p>
+              <p class="availability availability--available">
+                В НАЛИЧИИ
+              </p>
+              <div class="stock__item-bottom">
+                <div class="stock__price price">
+                  <p class="stock__allprice stock__allprice--new price--new">
+                    3990 <span>&#8381</span>
+                  </p>
+                  <p class="stock__allprice price--old">
+                    5990 <span>&#8381</span>
+                  </p>
+                </div>
+                <div class="star" data-rateyo-rating="4">
+                  <div class="star-number">
+                    4.5
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="stock__item mix product hits">
+            <div class="stock__item-left">
+              <div class="stock__badger badger badger--hit">
+                хит
+              </div>
+              <img class="stock__item-img" src="images/stock/8.jpg" alt="Мясо">
+            </div>
+            <div class="stock__item-right">
+              <p class="stock__item-desc product__desc">
+                Свинина мякоть,
+                <span>1кг</span>
+              </p>
+              <p class="availability availability--available">
+                В НАЛИЧИИ
+              </p>
+              <div class="stock__item-bottom">
+                <div class="stock__price price">
+                  <p class="stock__allprice stock__allprice--new price--new">
+                    499 <span>&#8381</span>
+                  </p>
+                  <p class="stock__allprice price--old">
+                    599 <span>&#8381</span>
+                  </p>
+                </div>
+                <div class="star" data-rateyo-rating="4">
+                  <div class="star-number">
+                    4.6
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <button class="stock__btn btn" type="button">Показать еще</button>
+      </div>
+      </div>
+    </section>
+    <div class="brand">
+      <div class="container">
+        <ul class="brand__list">
+          <li class="brand__item">
+            <a class="brand__link" href="#">
+              <img class="brand__img" src="images/brand/sprite.svg" alt="Sprite logo">
+            </a>
+          </li>
+          <li class="brand__item">
+            <a class="brand__link" href="#">
+              <img class="brand__img" src="images/brand/dr-pepper.svg" alt="Dr Pepper logo">
+            </a>
+          </li>
+          <li class="brand__item">
+            <a class="brand__link" href="#">
+              <img class="brand__img" src="images/brand/cocacola.svg" alt="CocaCola logo">
+            </a>
+          </li>
+          <li class="brand__item">
+            <a class="brand__link" href="#">
+              <img class="brand__img" src="images/brand/pepsi.svg" alt="Pepsi logo">
+            </a>
+          </li>
+          <li class="brand__item">
+            <a class="brand__link" href="#">
+              <img class="brand__img" src="images/brand/redbull.svg" alt="RedBull logo">
+            </a>
+          </li>
+          <li class="brand__item">
+            <a class="brand__link" href="#">
+              <img class="brand__img" src="images/brand/fanta.svg" alt="Fanta logo">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <section class="ournews">
+      <div class="container">
+        <div class="ournews__inner">
+          <div class="ournews__top">
+            <h2 class="title">НАШИ НОВОСТИ</h2>
+            <a class="ournews__btn" href="#">все Новости</a>
+          </div>
+          <ul class="ournews__list">
+            <li class="ournews__item">
+              <div class="ournews__date">
+                <p class="ournews__date-month">
+                  ИЮЛЬ
+                </p>
+                <p class="ournews__date-numb">
+                  15
+                </p>
+              </div>
+              <img class="ournews__img" src="images/content/news/1.jpg" alt="Изображение с клубникой">
+              <div class="ournews__desc">
+                Событие этого лета: распродажа сезонных фруктов в онлайн-маркете ФрешОК. Торопись, пока всё не
+                разобрали!
+              </div>
+            </li>
+            <li class="ournews__item">
+              <div class="ournews__date">
+                <p class="ournews__date-month">
+                  май
+                </p>
+                <p class="ournews__date-numb">
+                  07
+                </p>
+              </div>
+              <img class="ournews__img" src="images/content/news/2.jpg" alt="Изображение с Манго">
+              <div class="ournews__desc">
+              Шикарнейший выбор манго в нашем онлайн-маркете
+              </div>
+            </li>
+            <li class="ournews__item">
+              <div class="ournews__date">
+                <p class="ournews__date-month">
+                  февраль
+                </p>
+                <p class="ournews__date-numb">
+                  20
+                </p>
+              </div>
+              <img class="ournews__img" src="images/content/news/3.jpg" alt="Изображение с папайя">
+              <div class="ournews__desc">
+                Всё, что вы хотели знать о папайя
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
   </main>
@@ -482,7 +890,8 @@
                 <p class="subcribe__subtext">
                   Следите за нашими акциями
                 </p>
-                <input class="subcribe__input form__input" type="email" name="email" placeholder="email@email.com" required>
+                <input class="subcribe__input form__input" type="email" name="email" placeholder="email@email.com"
+                  required>
                 <button class="subcribe__btn form__btn btn" type="submit">Подписаться</button>
               </label>
             </form>
@@ -519,7 +928,7 @@
               </ul>
             </div>
             <address class="footer__adrs">
-              <a class="footer__adrs-link  href="tel:+7907288365>
+              <a class="footer__adrs-link" href="tel:7907288365">
                 Горячая линия +7 907 288 365
               </a>
               <p class="footer__adrs-text">
