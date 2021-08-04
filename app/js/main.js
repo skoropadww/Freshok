@@ -1,5 +1,5 @@
 $(function(){
-  $('.slider').slick({
+  $('.hero__inner').slick({
     
   });
   let containerEl1 = document.querySelector('[data-ref="container-1"]');
