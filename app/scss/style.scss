@@ -3,7 +3,7 @@
 @import "libs";
 @import "vars";
 @import "global";
-
+@import "components/btn";
 
 .header {
   &__top {
@@ -402,8 +402,8 @@
 
   &__top-item:not(:last-child){
     margin-bottom: 9px;
-  }
-
+  } 
+  
   &__top-btn {
     background-image: url(../images/heart-icon.svg);
     background-position: center;
@@ -457,6 +457,10 @@
   &__img {
     width: 100%;
     margin-bottom: 18px;
+
+    &--stock {
+      max-width: 100px;
+    }
   }
 
   &__desc {
@@ -467,12 +471,23 @@
     overflow: hidden;
     padding: 0 18px 10px;
     font-weight: 600;
+
+    &--stock {
+      padding-left: 0;
+      margin-bottom: 6px;
+      height: 60px;
+    }
   }
 
   &__bottom {
     padding: 0 18px 18px;
     display: flex;
     justify-content: space-between;
+
+    &--stock {
+      padding: 0;
+      align-self: center;
+    }
   }
 
   &__cart {
@@ -487,7 +502,46 @@
   &:hover {
     border-color: $green-700;
   }
+
+  &__left {
+    position: relative;
+    margin-right: 12px;
+    width: 112px;
+    height: 100px;
+  }
+
+  &__right {
+    max-width: 165px;
+    width: 100%;
+    text-align: left;
+  }
+
+  &--stock {
+    padding: 13px 14px;
+    background-color: $white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
+
+.stock {
+  text-align: center;
+  background-color: $silver-200;
+  
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2, 125px);
+    grid-gap: 30px;
+    margin-bottom: 48px;
+  }
+  
+    &__btn {
+      text-transform: initial;
+    }
+  
+  }
 
 .banner {
   margin-bottom: 72px;
@@ -552,79 +606,6 @@
   }
 }
 
-.stock {
-  text-align: center;
-  background-color: $silver-200;
-
-  &__badger {
-    position: absolute;
-    font-size: 10px;
-  }
-
-  &__list {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(2, 125px);
-    grid-gap: 30px;
-    margin-bottom: 48px;
-  }
-
-  &__item {
-    padding: 13px 14px;
-    background-color: $white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  &__item-left {
-    position: relative;
-    margin-right: 12px;
-    width: 112px;
-    height: 100px;
-  }
-
-  &__item-img {
-   max-width: 100px;
-  }
-
-  &__item-desc {
-    padding-left: 0;
-    margin-bottom: 6px;
-    height: 60px;
-  }
-
-  &__item-right {
-    max-width: 165px;
-    width: 100%;
-    text-align: left;
-  }
-
-  &__item-bottom {
-    display: flex;
-    justify-content: space-between;
-    align-self: center;
-  }
-
-  &__price {
-    display: block;
-  }
-
-  &__allprice {
-    display: inline-block;
-    font-size: 12px;
-  }
-
-  &__allprice--new {
-    font-size: 14px;
-    font-weight: 600;
-  }
-
-  &__btn {
-    text-transform: initial;
-  }
-
-}
 
 .brand {
   padding: 72px 0;
@@ -722,6 +703,7 @@
   }
 
   &__desc {
+    display: inline-block;
     padding: 18px;
     overflow: hidden;
     max-height: 95px;
@@ -817,6 +799,29 @@
 
   &__bottom-item:not(:last-child) {
     margin-right: 24px;
+  }
+
+  &__bottom-link {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 29px;
+    display: inline-block;
+    transition: opacity 0.3s linear;
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    &--visa {
+      background-image: url(../images/visa.svg);
+      width: 93px;
+    }
+
+    &--master {
+      background-image: url(../images/mc.svg);
+      width: 49px;
+    }
   }
 }
 
