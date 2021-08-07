@@ -1,0 +1,22 @@
+.brand {
+  padding: 72px 0;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__item {
+    opacity: 0.5;
+    transition: opacity 0.3s linear;
+
+    &:hover {
+      opacity: 1;
+    }
+  } 
+
+  .slick-slide img  {
+    margin: 0 auto;
+  }
+}

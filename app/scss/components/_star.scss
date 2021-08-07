@@ -1,0 +1,10 @@
+.star {
+  display: flex;
+  margin-right: -25px;
+  align-items: center;
+  
+  &__rating {
+    font-weight: 700;
+    color: $dark-500;
+  }
+}
