@@ -1,10 +1,15 @@
 .filter {
     display: flex;
     justify-content: center;
-    margin: 0 auto 48px;
+    margin: 0 auto 28px;
+    flex-wrap: wrap;
 
-    &__item:not(:last-child) {
-      margin-right: 24px;
+    &__item {
+      margin-bottom: 25px;
+
+      &:not(:last-child) {
+        margin-right: 24px;
+      }
     }
 
     &__btn {
