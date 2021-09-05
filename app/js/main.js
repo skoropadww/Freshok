@@ -33,4 +33,13 @@ $(function(){
     fullStar: true,
   });
 
+  $('.product-filter__numb').styler({});
+
+  $('.button-cart').on('click', function(){
+    $('.hidden-basket').addClass('hidden-basket--active');
+  });
+
+  $('.close-btn').on('click', function () {
+    $('.hidden-basket').removeClass('hidden-basket--active');
+  });
 })

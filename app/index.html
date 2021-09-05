@@ -64,45 +64,45 @@
             <img class="logo__img" src="images/logo.svg" alt="Фрешок логотип">
           </a>
           <div class="header__category-wrap">
-          <button class="header__category" type="button">Каталог продуктов</button>
-          <ul class="header__category-list">
-            <li class="header__category-item">
-              <a href="" class="header__category-link">Овощи и фрукты</a>
-            </li>
-            <li class="header__category-item">
-              <a href="" class="header__category-link">Бакалея</a>
-            </li>
-            <li class="header__category-item">
-              <a href="" class="header__category-link">Молочные продукты</a>
-            </li>
-            <li class="header__category-item">
-              <a href="" class="header__category-link">Хлеб</a>
-            </li>
-            <li class="header__category-item">
-              <a href="" class="header__category-link">Мясо</a>
-            </li>
-            <li class="header__category-item">
-              <a href="" class="header__category-link">Колбаса</a>
-            </li>
-            <li class="header__category-item">
-              <a href="" class="header__category-link">Рыба</a>
-            </li>
-            <li class="header__category-item">
-              <a href="" class="header__category-link">Алкоголь</a>
-            </li>
-            <li class="header__category-item">
-              <a href="" class="header__category-link">Напитки</a>
-            </li>
-            <li class="header__category-item">
-              <a href="" class="header__category-link">Торты</a>
-            </li>
-            <li class="header__category-item">
-              <a href="" class="header__category-link">Мясо</a>
-            </li>
-            <li class="header__category-item">
-              <a href="" class="header__category-link">Чай, кофе</a>
-            </li>
-          </ul>
+            <button class="header__category" type="button">Каталог продуктов</button>
+            <ul class="header__category-list">
+              <li class="header__category-item">
+                <a href="" class="header__category-link">Овощи и фрукты</a>
+              </li>
+              <li class="header__category-item">
+                <a href="" class="header__category-link">Бакалея</a>
+              </li>
+              <li class="header__category-item">
+                <a href="" class="header__category-link">Молочные продукты</a>
+              </li>
+              <li class="header__category-item">
+                <a href="" class="header__category-link">Хлеб</a>
+              </li>
+              <li class="header__category-item">
+                <a href="" class="header__category-link">Мясо</a>
+              </li>
+              <li class="header__category-item">
+                <a href="" class="header__category-link">Колбаса</a>
+              </li>
+              <li class="header__category-item">
+                <a href="" class="header__category-link">Рыба</a>
+              </li>
+              <li class="header__category-item">
+                <a href="" class="header__category-link">Алкоголь</a>
+              </li>
+              <li class="header__category-item">
+                <a href="" class="header__category-link">Напитки</a>
+              </li>
+              <li class="header__category-item">
+                <a href="" class="header__category-link">Торты</a>
+              </li>
+              <li class="header__category-item">
+                <a href="" class="header__category-link">Мясо</a>
+              </li>
+              <li class="header__category-item">
+                <a href="" class="header__category-link">Чай, кофе</a>
+              </li>
+            </ul>
           </div>
           <form class="search" action="#">
             <label class="search__label">
@@ -135,6 +135,88 @@
               </button>
             </li>
           </ul>
+          <div class="hidden-basket">
+            <div class="hidden-basket__top">
+              <div class="hidden-basket__top-info">
+                <p class="hidden-basket__title">
+                  Корзина
+                </p>
+                <button class="hidden-basket__clear" type="button">
+                  очистить корзину
+                </button>
+              </div>
+              <button class="close-btn" type="button"></button>
+            </div>
+            <div class="hidden-basket__box">
+              <article class="product product--basket">
+                <div class=" product__left">
+                  <img class="product__img" src="images/stock/1.jpg" alt="Сочный ананас">
+                  <div class="product__info">
+                    <p class="product__desc">
+                      Ананас,
+                      <span>1кг</span>
+                    </p>
+                    <div class="price" >
+                      <p class="price__new price__new--basket">
+                        999 <span class="price__currency">&#8381</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__right">
+                  <button class="close-btn close-btn--basket-item" type="button"></button>
+                  <div class="product__bottom">
+                    <input class="product-filter__numb" type="number" value="1" min="1">
+                    <div class="price">
+                      <p class="price__new price__new--basket price__new--basket-total">
+                        1998 <span class="price__currency">&#8381</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="product product--basket">
+                <div class=" product__left">
+                  <img class="product__img" src="images/stock/1.jpg" alt="Сочный ананас">
+                  <div class="product__info">
+                    <p class="product__desc">
+                      Ананас,
+                      <span>1кг</span>
+                    </p>
+                    <div class="price">
+                      <p class="price__new price__new--basket">
+                        999 <span class="price__currency">&#8381</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__right">
+                  <button class="close-btn close-btn--basket-item" type="button"></button>
+                  <div class="product__bottom">
+                    <input class="product-filter__numb" type="number" value="1" min="1">
+                    <div class="price">
+                      <p class="price__new price__new--basket">
+                        1998 <span class="price__currency">&#8381</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="hidden-basket__bottom">
+              <div class="hidden-basket__total">
+                <p class="hidden-basket__total-text">
+                  Товаров на сумму
+                </p>
+                <div class="price">
+                  <p class="price__new price__new--basket">
+                    2038 <span class="price__currency">&#8381</span>
+                  </p>
+                </div>
+              </div>
+              <a class="btn btn--checkout" href="#">Оформить заказ</a>
+            </div>
+          </div>
         </nav>
       </div>
     </div>
@@ -516,7 +598,8 @@
     <div class="banner">
       <div class="container">
         <ul class="banner__list">
-          <li class="banner__item banner__item--light banner__item--long" style="background-image: url(images/banner/1.jpg);">
+          <li class="banner__item banner__item--light banner__item--long"
+            style="background-image: url(images/banner/1.jpg);">
             <p class="banner__subtitle">
               СВЕЖАЙШИЕ ФРУКТЫ
             </p>

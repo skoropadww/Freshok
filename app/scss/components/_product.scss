@@ -153,4 +153,52 @@
       font-size: 12px;
     }
   }
+
+  &--basket {
+    background-color: #fff;
+    height: 84px;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 12px;
+
+    .product__left {
+      display: flex;
+      justify-content: flex-start;
+      width: 100%;
+      height: auto;
+    }
+
+    .product__img {
+      max-width: 60px;
+      margin-bottom: 0;
+      margin-right: 32px;
+    }
+
+    .product__info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .product__desc {
+      width: 100%;
+      height: auto;
+      padding: 0;
+      margin-bottom: 5px;
+    }
+
+    .product__right {
+      padding-top:0;
+      height: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    .product__bottom {
+      padding: 0;
+    }
+  }
 }
